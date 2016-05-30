@@ -1,0 +1,18 @@
+<h1 class="page-header">Moves</h1>
+
+<table class="table table-striped">
+  <thead>
+    <th>ID</th>
+    <th>Kind</th>
+    <th>Ammount</th>
+    <th>Cash</th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="move in moves">
+      <td>{{move.id}}</td>
+      <td>{{move.kind}}</td>
+      <td>{{move.ammount}}</td>
+      <td>{{move.cash_name}}</td>
+    </tr>
+  </tbody>
+</table>

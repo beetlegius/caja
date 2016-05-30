@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+      <ul class="nav nav-sidebar">
+        <li ui-sref-active="active"><a ui-sref="root.moves">Moves <span class="sr-only">(current)</span></a></li>
+        <li ui-sref-active="active" ng-repeat="cash in cashs"><a ui-sref="root.cash({cash_id: cash.id})">{{cash.name}}</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-9 col-md-10 main" ui-view></div>
+  </div>
+</div>
